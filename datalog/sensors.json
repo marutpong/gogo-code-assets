@@ -238,11 +238,11 @@
     "fields": [
       {
         "label": "Loudness",
-        "key": "Loudness"
+        "key": "Loudness",
+        "setupCode": "setinputfilter %INPUT% 2",
+        "code": "readfilteredinput %INPUT%",
+        "endCode": "resetinputminmax %INPUT%"
       }
-    ],
-    "setupCode": "setinputfilter %INPUT% 2",
-    "code": "readfilteredinput %INPUT%",
-    "endCode": "resetinputminmax %INPUT%"
+    ]
   }
 ]
