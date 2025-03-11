@@ -7,6 +7,7 @@
     "type": "MULTI",
     "label": "I2C High Accuracy Temp & Humid Sensor",
     "model": "SHT35",
+    "image": "static/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg",
     "fields": [
       {
         "label": "Temperature (Celsius)",
@@ -35,27 +36,27 @@
         "unit": "°C",
         "value": "(tasmotamessage \"DewPoint\")"
       }
-    ],
-    "image": "static/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg"
+    ]
   },
   {
     "id": "DLS",
     "type": "MULTI",
     "label": "Digital Light Sensor",
+    "image": "static/sensor-img/digital-light-sensor-tsl2561.jpg",
     "fields": [
       {
         "label": "Illuminance",
         "key": "Illuminance",
         "unit": "lux"
       }
-    ],
-    "image": "static/sensor-img/digital-light-sensor-tsl2561.jpg"
+    ]
   },
   {
     "id": "SGP41",
     "type": "MULTI",
     "label": "Air Quality Sensor",
     "model": "SGP41",
+    "image": "static/sensor-img/smart-air-quality-sensor-sgp41.jpg",
     "fields": [
       {
         "label": "TVOC",
@@ -67,14 +68,14 @@
         "key": "NOx",
         "unit": ""
       }
-    ],
-    "image": "static/sensor-img/smart-air-quality-sensor-sgp41.jpg"
+    ]
   },
   {
     "id": "HM3301",
     "type": "MULTI",
     "label": "Laser PM2.5 Sensor",
     "model": "HM3301",
+    "image": "static/sensor-img/laser-pm2.5-dust-sensor.jpg",
     "fields": [
       {
         "label": "PM 1 µm",
@@ -91,14 +92,14 @@
         "key": "PM10",
         "unit": "µg/m³"
       }
-    ],
-    "image": "static/sensor-img/laser-pm2.5-dust-sensor.jpg"
+    ]
   },
   {
     "id": "BME680",
     "type": "MULTI",
     "label": "4-in-1 Environmental sensor",
     "model": "BME680",
+    "image": "static/sensor-img/4-in-1-env-sensor-bme680.jpg",
     "fields": [
       {
         "label": "Temperature (Celsius)",
@@ -137,8 +138,7 @@
         "unit": "kΩ",
         "catalog": "air quality"
       }
-    ],
-    "image": "static/sensor-img/4-in-1-env-sensor-bme680.jpg"
+    ]
   },
   {
     "": "-------------------------- Configurable Port Sensors --------------------------"
@@ -147,6 +147,7 @@
     "id": "DISTANCE",
     "type": "DIGITAL",
     "label": "Distance",
+    "image": null,
     "fields": [
       {
         "label": "Distance (cm)",
@@ -161,7 +162,6 @@
         "value": "(tonumber (tasmotamessage \"Distance\") / 2.54)"
       }
     ],
-    "image": null,
     "setupCode": {
       "PORT_1": "send \"gpio0 1888\"",
       "PORT_2": "send \"gpio3 1888\""
@@ -174,73 +174,73 @@
     "id": "TDS",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "TDS",
         "key": "TDS"
       }
-    ],
-    "image": null
+    ]
   },
   {
     "id": "RAIN_SENSOR",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "Rain sensor",
         "key": "RainSensor"
       }
-    ],
-    "image": null
+    ]
   },
   {
     "id": "HEART_RATE",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "Heart rate",
         "key": "HeartRate"
       }
-    ],
-    "image": null
+    ]
   },
   {
     "id": "BUTTON_SET",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "Button set",
         "key": "ButtonSet"
       }
-    ],
-    "image": null
+    ]
   },
   {
     "id": "LEVER",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "Lever",
         "key": "Lever"
       }
-    ],
-    "image": null
+    ]
   },
   {
     "id": "LOUDNESS",
     "type": "ANALOG",
     "label": "Analog",
+    "image": null,
     "fields": [
       {
         "label": "Loudness",
         "key": "Loudness"
       }
     ],
-    "image": null,
     "setupCode": "setinputfilter %INPUT% 2",
     "code": "readfilteredinput %INPUT%",
     "endCode": "resetinputminmax %INPUT%"
