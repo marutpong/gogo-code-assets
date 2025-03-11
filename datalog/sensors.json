@@ -1,0 +1,248 @@
+[
+  {
+    "": "-------------------------- Multi Port Sensors --------------------------"
+  },
+  {
+    "id": "SHT35",
+    "type": "MULTI",
+    "label": "I2C High Accuracy Temp & Humid Sensor",
+    "model": "SHT35",
+    "fields": [
+      {
+        "label": "Temperature (Celsius)",
+        "key": "Temperature_C",
+        "unit": "°C",
+        "value": "(tasmotamessage \"Temperature\")",
+        "catalog": "temperature"
+      },
+      {
+        "label": "Temperature (Fahrenheit)",
+        "key": "Temperature_F",
+        "unit": "°F",
+        "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
+        "catalog": "temperature"
+      },
+      {
+        "label": "Humidity",
+        "key": "Humidity",
+        "unit": "%",
+        "value": "(tasmotamessage \"Humidity\")",
+        "catalog": "humidity"
+      },
+      {
+        "label": "Dew point",
+        "key": "DewPoint",
+        "unit": "°C",
+        "value": "(tasmotamessage \"DewPoint\")"
+      }
+    ],
+    "image": "static/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg"
+  },
+  {
+    "id": "DLS",
+    "type": "MULTI",
+    "label": "Digital Light Sensor",
+    "fields": [
+      {
+        "label": "Illuminance",
+        "key": "Illuminance",
+        "unit": "lux"
+      }
+    ],
+    "image": "static/sensor-img/digital-light-sensor-tsl2561.jpg"
+  },
+  {
+    "id": "SGP41",
+    "type": "MULTI",
+    "label": "Air Quality Sensor",
+    "model": "SGP41",
+    "fields": [
+      {
+        "label": "TVOC",
+        "key": "TVOC",
+        "unit": ""
+      },
+      {
+        "label": "NOx",
+        "key": "NOx",
+        "unit": ""
+      }
+    ],
+    "image": "static/sensor-img/smart-air-quality-sensor-sgp41.jpg"
+  },
+  {
+    "id": "HM3301",
+    "type": "MULTI",
+    "label": "Laser PM2.5 Sensor",
+    "model": "HM3301",
+    "fields": [
+      {
+        "label": "PM 1 µm",
+        "key": "PM1",
+        "unit": "µg/m³"
+      },
+      {
+        "label": "PM 2.5 µm",
+        "key": "PM2.5",
+        "unit": "µg/m³"
+      },
+      {
+        "label": "PM 10 µm",
+        "key": "PM10",
+        "unit": "µg/m³"
+      }
+    ],
+    "image": "static/sensor-img/laser-pm2.5-dust-sensor.jpg"
+  },
+  {
+    "id": "BME680",
+    "type": "MULTI",
+    "label": "4-in-1 Environmental sensor",
+    "model": "BME680",
+    "fields": [
+      {
+        "label": "Temperature (Celsius)",
+        "key": "Temperature_C",
+        "unit": "°C",
+        "datalogName": "Temperature_C",
+        "value": "(tasmotamessage \"Temperature\")",
+        "catalog": "temperature"
+      },
+      {
+        "label": "Temperature (Fahrenheit)",
+        "key": "Temperature_F",
+        "unit": "°F",
+        "datalogName": "Temperature_F",
+        "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
+        "catalog": "temperature"
+      },
+      {
+        "label": "Humidity",
+        "key": "Humidity",
+        "unit": "%"
+      },
+      {
+        "label": "Dew point",
+        "key": "DewPoint",
+        "unit": "°C"
+      },
+      {
+        "label": "Pressure",
+        "key": "Pressure",
+        "unit": "hPa"
+      },
+      {
+        "label": "Gas",
+        "key": "Gas",
+        "unit": "kΩ",
+        "catalog": "air quality"
+      }
+    ],
+    "image": "static/sensor-img/4-in-1-env-sensor-bme680.jpg"
+  },
+  {
+    "": "-------------------------- Configurable Port Sensors --------------------------"
+  },
+  {
+    "id": "DISTANCE",
+    "type": "DIGITAL",
+    "label": "Distance",
+    "fields": [
+      {
+        "label": "Distance (cm)",
+        "key": "Distance_cm",
+        "unit": "cm",
+        "value": "(tasmotamessage \"Distance\")"
+      },
+      {
+        "label": "Distance (Inch)",
+        "key": "Distance_inch",
+        "unit": "Inch",
+        "value": "(tonumber (tasmotamessage \"Distance\") / 2.54)"
+      }
+    ],
+    "image": null,
+    "setupCode": {
+      "PORT_1": "send \"gpio0 1888\"",
+      "PORT_2": "send \"gpio3 1888\""
+    }
+  },
+  {
+    "": "-------------------------- Input Port Sensors --------------------------"
+  },
+  {
+    "id": "TDS",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "TDS",
+        "key": "TDS"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "RAIN_SENSOR",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "Rain sensor",
+        "key": "RainSensor"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "HEART_RATE",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "Heart rate",
+        "key": "HeartRate"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "BUTTON_SET",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "Button set",
+        "key": "ButtonSet"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "LEVER",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "Lever",
+        "key": "Lever"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "LOUDNESS",
+    "type": "ANALOG",
+    "label": "Analog",
+    "fields": [
+      {
+        "label": "Loudness",
+        "key": "Loudness"
+      }
+    ],
+    "image": null,
+    "setupCode": "setinputfilter %INPUT% 2",
+    "code": "readfilteredinput %INPUT%",
+    "endCode": "resetinputminmax %INPUT%"
+  }
+]
