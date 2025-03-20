@@ -7,7 +7,7 @@
     "type": "MULTI",
     "label": "I2C High Accuracy Temp & Humid Sensor",
     "model": "SHT35",
-    "image": "static/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg",
+    "image": "static/datalog/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg",
     "fields": [
       {
         "label": "Temperature (Celsius)",
@@ -42,7 +42,7 @@
     "id": "DLS",
     "type": "MULTI",
     "label": "Digital Light Sensor",
-    "image": "static/sensor-img/digital-light-sensor-tsl2561.jpg",
+    "image": "static/datalog/sensor-img/digital-light-sensor-tsl2561.jpg",
     "fields": [
       {
         "label": "Illuminance",
@@ -56,7 +56,7 @@
     "type": "MULTI",
     "label": "Air Quality Sensor",
     "model": "SGP41",
-    "image": "static/sensor-img/smart-air-quality-sensor-sgp41.jpg",
+    "image": "static/datalog/sensor-img/smart-air-quality-sensor-sgp41.jpg",
     "fields": [
       {
         "label": "TVOC",
@@ -75,7 +75,7 @@
     "type": "MULTI",
     "label": "Laser PM2.5 Sensor",
     "model": "HM3301",
-    "image": "static/sensor-img/laser-pm2.5-dust-sensor.jpg",
+    "image": "static/datalog/sensor-img/laser-pm2.5-dust-sensor.jpg",
     "fields": [
       {
         "label": "PM 1 µm",
@@ -99,7 +99,7 @@
     "type": "MULTI",
     "label": "4-in-1 Environmental sensor",
     "model": "BME680",
-    "image": "static/sensor-img/4-in-1-env-sensor-bme680.jpg",
+    "image": "static/datalog/sensor-img/4-in-1-env-sensor-bme680.jpg",
     "fields": [
       {
         "label": "Temperature (Celsius)",
