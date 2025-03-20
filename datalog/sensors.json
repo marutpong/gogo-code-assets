@@ -14,21 +14,21 @@
         "key": "Temperature_C",
         "unit": "°C",
         "value": "(tasmotamessage \"Temperature\")",
-        "catalog": "temperature"
+        "category": "temperature"
       },
       {
         "label": "Temperature (Fahrenheit)",
         "key": "Temperature_F",
         "unit": "°F",
         "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
-        "catalog": "temperature"
+        "category": "temperature"
       },
       {
         "label": "Humidity",
         "key": "Humidity",
         "unit": "%",
         "value": "(tasmotamessage \"Humidity\")",
-        "catalog": "humidity"
+        "category": "humidity"
       },
       {
         "label": "Dew point",
@@ -107,7 +107,7 @@
         "unit": "°C",
         "datalogName": "Temperature_C",
         "value": "(tasmotamessage \"Temperature\")",
-        "catalog": "temperature"
+        "category": "temperature"
       },
       {
         "label": "Temperature (Fahrenheit)",
@@ -115,7 +115,7 @@
         "unit": "°F",
         "datalogName": "Temperature_F",
         "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
-        "catalog": "temperature"
+        "category": "temperature"
       },
       {
         "label": "Humidity",
@@ -136,7 +136,7 @@
         "label": "Gas",
         "key": "Gas",
         "unit": "kΩ",
-        "catalog": "air quality"
+        "category": "air quality"
       }
     ]
   },
