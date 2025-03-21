@@ -244,5 +244,17 @@
         "endCode": "resetinputminmax %INPUT%"
       }
     ]
+  },
+  {
+    "id": "SOIL_HUMIDITY",
+    "type": "ANALOG",
+    "label": "Analog",
+    "image": null,
+    "fields": [
+      {
+        "label": "Soil Humidity",
+        "key": "SoilHumidity"
+      }
+    ]
   }
 ]
